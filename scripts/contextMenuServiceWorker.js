@@ -8,7 +8,9 @@ const generateCompletionAction = async (info) => {
 
     // Let's see what we get!
     // sendMessage(baseCompletion.text);
-    sendMessage("test");
+    sendMessage(
+      "Once upon a time, there lived two friends, a human named Bob and a robot named AI. Bob was a scientist and AI was his assistant. One day, Bob had a brilliant idea. He wanted to create a robot that could think like a human. After months of hard work, he created AI. Bob was thrilled and immediately began teaching AI how to think and interact with the world around him. AI was able to learn quickly. He was able to understand emotions and make decisions based on what he learned. He was even able to talk to Bob! Bob was amazed and decided to put AI to the test. He gave AI a complex problem to solve. AI was able to solve the problem in a matter of minutes. Bob was so impressed that he decided to make AI his assistant on many of his projects. Bob and AI became friends and went on many adventures together. Bob was always impressed by AI's ability to think and solve problems. AI had become much more than just a robot; he was a friend and companion. AI was an example of Artificial Intelligence, or AI. AI is a type of technology that is able to think, learn, and act like a human being. It has the ability to think and act independently and make decisions based on what it has learned. AI is used in many fields, from medicine to robotics, and is constantly evolving and improving."
+    );
   } catch (error) {
     console.log(error);
   }

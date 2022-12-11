@@ -1,0 +1,42 @@
+#conceptua-overlay {
+  padding: 25px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 500;
+  height: 95vh;
+  border-radius: 25px;
+  width: 25%;
+  min-width: 400px;
+  background: #e6f3ff;
+  border: 2px solid rgb(0, 103, 144);
+  box-shadow: 10px 10px 5px 0px rgba(0, 103, 144, 0.75);
+  overflow-y: scroll;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#conceptua-close {
+  all: unset !important;
+  font-size: 36px;
+  color: red;
+  font-weight: bold;
+}
+
+.extension-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+}
+
+.story-content {
+  font-size: 20px;
+}

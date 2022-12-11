@@ -1,15 +1,19 @@
 const insert = (content) => {
   var floatingMenu = document.createElement("div");
-  floatingMenu.style.position = "fixed";
-  floatingMenu.style.bottom = "0px";
-  floatingMenu.style.left = "0px";
-  floatingMenu.style.zIndex = "500";
-  floatingMenu.style.marginBottom = "2.5rem";
-  floatingMenu.style.background = "yellow";
+  floatingMenu.id = "conceptua-overlay";
 
-  floatingMenu.innerHTML = `<h1>${content}</h1>`;
+  floatingMenu.innerHTML = `<div class='extension-content'> <div class='top-row'> <h1>Conceptua &#128214;</h1> <button id='conceptua-close'>&#10005;</button> </div> <div class='subtitle'><h4>Here is your super cool Story &#129668;</h4></div> <div class='story'> <p class='story-content'>${content}</p> </div> </div> `;
   console.log(content);
+
   document.documentElement.appendChild(floatingMenu);
+  document
+    .getElementById("conceptua-close")
+    .addEventListener("click", myFunction);
+};
+
+const myFunction = () => {
+  const overlay = document.getElementById("conceptua-overlay");
+  overlay.style.display = "none";
 };
 
 chrome.runtime.onMessage.addListener(
